@@ -1,0 +1,50 @@
+<!-- add-education.component.html -->
+<div class="container mt-4">
+    <h2>Education Details Form</h2>
+    <form>
+      <!-- English -->
+      <div class="form-group">
+        <label for="englishValue">English:</label>
+        <input type="number" class="form-control" [(ngModel)]="formData.englishValue" name="englishValue" placeholder="Enter value">
+      </div>
+  
+      <!-- Hindi -->
+      <div class="form-group">
+        <label for="hindiValue">Hindi:</label>
+        <input type="number" class="form-control" [(ngModel)]="formData.hindiValue" name="hindiValue" placeholder="Enter value">
+      </div>
+  
+      <!-- PS -->
+      <div class="form-group">
+        <label for="psValue">PS:</label>
+        <input type="number" class="form-control" [(ngModel)]="formData.psValue" name="psValue" placeholder="Enter value">
+      </div>
+  
+      <!-- G -->
+      <div class="form-group">
+        <label for="gValue">G:</label>
+        <input type="number" class="form-control" [(ngModel)]="formData.gValue" name="gValue" placeholder="Enter value">
+      </div>
+  
+      <!-- M -->
+      <div class="form-group">
+        <label for="mValue">M:</label>
+        <input type="number" class="form-control" [(ngModel)]="formData.mValue" name="mValue" placeholder="Enter value">
+      </div>
+  
+      <!-- Calculate Sum Button -->
+      <div class="form-group mt-3">
+        <button type="button" class="btn btn-primary" (click)="calculateSum()">Calculate Sum</button>
+      </div>
+  
+      <!-- Display Total Sum -->
+      <div class="form-group">
+        <label for="totalSum">Total Sum:</label>
+        <input type="text" class="form-control" id="totalSum" [(ngModel)]="totalSum" name="totalSum" readonly>
+      </div>
+      <div class="form-group mt-3">
+        <button type="button" class="btn btn-success" (click)="onDone()">Done</button>
+      </div>
+    </form>
+  </div>
+  

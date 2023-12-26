@@ -1,0 +1,85 @@
+<div class="container mt-4">
+    <h2>View Details</h2>
+  
+    
+    <h3>Personal Information</h3>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th>First Name</th>
+          <td>{{ selectedStudent?.firstName }}</td>
+        </tr>
+        <tr>
+          <th>Middle Name</th>
+          <td>{{ selectedStudent?.middleName }}</td>
+        </tr>
+        <tr>
+          <th>Last Name</th>
+          <td>{{ selectedStudent?.lastName }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+   
+    <h3>Address Information</h3>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th>Address Type</th>
+          <td>{{ selectedStudent?.address?.addressType }}</td>
+        </tr>
+        <tr>
+          <th>Address 1</th>
+          <td>{{ selectedStudent?.address?.address1 }}</td>
+        </tr>
+        <tr>
+          <th>Address 2</th>
+          <td>{{ selectedStudent?.address?.address2 }}</td>
+        </tr>
+        <tr>
+          <th>Country</th>
+          <td>{{ selectedStudent?.address?.country }}</td>
+        </tr>
+        <tr>
+          <th>State</th>
+          <td>{{ selectedStudent?.address?.state }}</td>
+        </tr>
+        <tr>
+          <th>Pincode</th>
+          <td>{{ selectedStudent?.address?.pincode }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    
+    <h3>Education Information</h3>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th>English Value</th>
+          <td>{{ selectedStudent?.educationData?.englishValue }}</td>
+        </tr>
+        <tr>
+          <th>Hindi Value</th>
+          <td>{{ selectedStudent?.educationData?.hindiValue }}</td>
+        </tr>
+        <tr>
+          <th>PS Value</th>
+          <td>{{ selectedStudent?.educationData?.psValue }}</td>
+        </tr>
+        <tr>
+          <th>G Value</th>
+          <td>{{ selectedStudent?.educationData?.gValue }}</td>
+        </tr>
+        <tr>
+          <th>M Value</th>
+          <td>{{ selectedStudent?.educationData?.mValue }}</td>
+        </tr>
+        <tr>
+          <th>Total Sum</th>
+          <td>{{ selectedStudent?.totalSum }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

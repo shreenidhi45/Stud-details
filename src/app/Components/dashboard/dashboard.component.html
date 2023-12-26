@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/add-student']">
+            <i class="fas fa-users"></i> Add Student
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container mt-4">
+    <h2>Selected Details</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Middle Name</th>
+          <th>Last Name</th>
+          <th>Address Type</th>
+          <th>Address 1</th>
+          <th>Address 2</th>
+          <th>Country</th>
+          <th>State</th>
+          <th>Pincode</th>
+          <th>Total Sum</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Assuming you have an array of selectedDetails for multiple students -->
+        <tr *ngFor="let student of selectedDetails; let i=index ">
+          <td>{{ student.firstName }}</td>
+          <td>{{ student.middleName }}</td>
+          <td>{{ student.lastName }}</td>
+          <td>{{ student.address.addressType }}</td>
+          <td>{{ student.address.address1 }}</td>
+          <td>{{ student.address.address2 }}</td>
+          <td>{{ student.address.country }}</td>
+          <td>{{ student.address.state }}</td>
+          <td>{{ student.address.pincode }}</td>
+          <td>{{ student.totalSum }}</td>
+          <td>
+            <button class="btn btn-primary" (click)="viewDetails(i)">View</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
